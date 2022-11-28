@@ -4,9 +4,13 @@ const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 // alfabeto.map((letra) => )
 export default function Letras() {
     // const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-    // let botoes;
-    let i;
-    for (i=0; i<alfabeto.length; i++) {
+    let botoes;
+    // return (
+    //     <>
+    //         <Botao />
+    //     </>
+    // )
+    for (let i=0; i<alfabeto.length; i++) {
         // botoes += <Botao>{alfabeto[i]}</Botao>
         return Botao(i)
     }
@@ -15,6 +19,7 @@ export default function Letras() {
 }
 
 function Botao(i) {
+    // console.log(alfabeto)
     return (
         <button>{alfabeto[i]}</button>
     )
